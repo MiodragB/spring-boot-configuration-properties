@@ -1,0 +1,67 @@
+catalog:
+  name: "cars"
+basic:
+  anInt: 123
+  aLong: 123456789
+  aFloat: 1000.22
+  aDouble: 1000.22
+  aBolean: true
+  aChar: 'c'
+  integerWrapper: 123
+  doubleWrapper: 1000.22
+  characterWrapper: 'C'
+  booleanWrapper: true
+  string: 'aString'
+ # bigInteger: 123000000000000000000000000000000
+  bigDecimal: 123000000000000000000000000000000.99999999999999999999999999999999
+
+hierarchical:
+  description: illustration of hierarchical properties
+  level:
+    levelName: First level
+    description: nested configuration properties can be represented by nested static class
+    nestedLevel:
+      levelName: Second level
+      description: You can have as much nested levels as you like
+  externalNestedProperties:
+    description: To map nested properties you can use external class also
+
+store:
+  stringList:
+  - value1
+  - value2
+  commaSeparatedList: value3, value4
+  descriptionObjects:
+  -
+    name: List of nested objects
+    description: You can also quite easily map list of objects
+  -
+    name: List of nested objects
+    description: You can also quite easily map list of objects
+  stringStringMap:
+    key1: value1
+    key2: value2
+  mapList:
+    - key1: value1
+      key2: value2
+    - key3: value3
+      key4: value4
+  stringListMap:
+    key1:
+      - listValue1
+      - listValue2
+  stringDescriptionObjectMap:
+    key1:
+        name: descriptionObjectName
+        description: description
+  stringDescriptionObjectsMap:
+    key1:
+      -
+       name: name 1
+       description: description 1
+      -
+       name: name 2
+       description: description 2
+
+custom:
+  localDate: 03-25-2016
